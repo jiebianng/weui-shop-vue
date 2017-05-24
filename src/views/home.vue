@@ -7,9 +7,9 @@
       <swiper v-bind:slide-data='slideData'></swiper>
       <!--图标分类-->
       <div class="weui-flex wy-iconlist-box">
-        <div class="weui-flex__item"><a v-link="{ path: '/pro_list'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link1.png"></div><p>精选推荐</p></a></div>
-        <div class="weui-flex__item"><a v-link="{ path: '/pro_list'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link2.png"></div><p>酒水专场</p></a></div>
-        <div class="weui-flex__item"><a v-link="{ path: '/all_orders'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link3.png"></div><p>订单管理</p></a></div>
+        <div class="weui-flex__item"><a v-link="{ name: 'pro_list'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link1.png"></div><p>精选推荐</p></a></div>
+        <div class="weui-flex__item"><a v-link="{ name: 'pro_list'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link2.png"></div><p>酒水专场</p></a></div>
+        <div class="weui-flex__item"><a v-link="{ name: 'all_orders'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link3.png"></div><p>订单管理</p></a></div>
         <div class="weui-flex__item"><a href="Settled_in.html" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link4.png"></div><p>商家入驻</p></a></div>
       </div>
       <!--新闻切换-->
