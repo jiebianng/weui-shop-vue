@@ -2,7 +2,7 @@
 
 
 ## Build Setup
-
+[静态展示](https://jiebianng.github.io/weui-shop-vue/dist/)<br />
 ``` bash
 # install dependencies
 npm install
