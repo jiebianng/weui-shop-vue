@@ -51,7 +51,6 @@
       $('head title').html('商品列表');
       var _this = this;
       main.getAjax({
-        url:"/static/data/main.json",
         ret(result){
           _this.$set('GuessLike',result.GuessLike);
         }
@@ -69,7 +68,6 @@
         loading = true;
         setTimeout(function() {
           main.getAjax({
-            url:"/static/data/main.json",
             ret(result){
               _this.$set('GuessLike',_this.GuessLike.concat(result.GuessLike));
             }

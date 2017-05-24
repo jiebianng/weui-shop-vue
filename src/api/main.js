@@ -10,7 +10,7 @@
 export function getAjax(obj) {
     $.ajax({
         type: obj.type,
-        url: obj.url,
+        url: 'static/data/main.json',
         dataType: obj.dataType,
         data:obj.data,
         traditional:true,

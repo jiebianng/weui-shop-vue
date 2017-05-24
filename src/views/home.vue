@@ -80,7 +80,6 @@
       $('head title').html('首页');
       var _this = this;
       main.getAjax({
-        url:"/static/data/main.json",
         ret(result){
           _this.$set('slideData',result.slideData);
           _this.$set('news',result.news);

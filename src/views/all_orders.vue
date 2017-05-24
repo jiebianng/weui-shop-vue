@@ -216,7 +216,6 @@
             $('head title').html(this.headData);
             var _this = this;
             main.getAjax({
-                url:"/static/data/main.json",
                 ret(result){
                     _this.$set('orderLists',result.orderLists);
                 }
@@ -242,7 +241,6 @@
             ajaxSend: function (index) {
                 var _this = this;
                 main.getAjax({
-                    url:"/static/data/main.json",
                     ret(result){
                         _this.$set('orderLists',result.orderLists);
                     },
