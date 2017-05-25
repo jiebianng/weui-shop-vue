@@ -252,6 +252,7 @@ header,.weui-navbar{
 
 /*订单详情*/
 .wy-header{ height:44px; border-bottom:1px solid #e1e1e1; position:relative;}
+.wy-header.poa{ position:fixed; top:0; left:0; right:0; z-index:200;}
 .wy-header-icon-back{position: absolute; left:0; top:0; width: 40px;height: 44px; }
 .wy-header-icon-back span {width:20px;height:20px; margin: 12px 0 0 10px; background:url(../images/icon-back.png) no-repeat; background-size:20px; display:block;}
 .wy-header-title{margin: 0 50px;text-align: center;height: 44px;line-height: 44px;font-size: 16px; color:#252525;}

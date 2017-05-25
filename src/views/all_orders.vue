@@ -1,10 +1,9 @@
 <template>
     <div>
-        <my-header v-bind:head-data='headData'></my-header>
+        <my-header v-bind:head-data='headData' class="poa"></my-header>
         <div class='weui-content'>
             <div class="weui-tab">
-                <div class="weui-navbar"
-                     style="position:fixed; top:44px; left:0; right:0; height:44px; background:#fff;">
+                <div class="weui-navbar" style="position:fixed; top:44px; left:0; right:0; height:44px; background:#fff;">
                     <a v-on:click="ajaxSend(0)" class="weui-navbar__item proinfo-tab-tit font-14 weui-bar__item--on" href="#tab1">全部</a>
                     <a v-on:click="ajaxSend(1)" class="weui-navbar__item proinfo-tab-tit font-14" href="#tab2">待付款</a>
                     <a v-on:click="ajaxSend(2)" class="weui-navbar__item proinfo-tab-tit font-14" href="#tab3">待发货</a>
@@ -212,9 +211,12 @@
     import '../assets/js/jquery-weui.js';
     import * as main from '../api/main';
     export default {
+        attached () {
+            this.clickTri();
+        },
         ready (){
             $('head title').html(this.headData);
-            var _this = this;
+            let _this = this;
             main.getAjax({
                 ret(result){
                     _this.$set('orderLists',result.orderLists);
@@ -238,7 +240,7 @@
             }
         },
         methods: {
-            ajaxSend: function (index) {
+            ajaxSend (index){
                 var _this = this;
                 main.getAjax({
                     ret(result){
@@ -248,6 +250,10 @@
                         status:index
                     }
                 });
+            },
+            clickTri (){
+                let tab = parseInt(this.$route.params.tab);
+                $('.proinfo-tab-tit').eq(tab).trigger('click');
             }
         },
         components: {
@@ -255,9 +261,4 @@
         }
     }
 </script>
-<style>
-    @import '../assets/css/weui.min.css';
-    @import '../assets/css/jquery-weui.css';
-    @import '../assets/css/style.css';
-</style>
 

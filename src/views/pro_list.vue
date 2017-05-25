@@ -22,7 +22,7 @@
       </div>
       <div id="list" class='demos-content-padded proListWrap'>
         <div class="pro-items" v-for="data in GuessLike">
-          <a :href="data.url" class="weui-media-box weui-media-box_appmsg">
+          <a v-link="{name:'pro_info',params:{ goodsId: 22 }}" class="weui-media-box weui-media-box_appmsg">
             <div class="weui-media-box__hd"><img class="weui-media-box__thumb" :src="data.src" alt=""></div>
             <div class="weui-media-box__bd">
               <h1 class="weui-media-box__desc">{{data.title}}</h1>
@@ -86,9 +86,4 @@
     }
   }
 </script>
-<style>
-  @import '../assets/css/weui.min.css';
-  @import '../assets/css/jquery-weui.css';
-  @import '../assets/css/style.css';
-</style>
 

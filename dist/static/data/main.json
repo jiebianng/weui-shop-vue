@@ -2,136 +2,141 @@
   "slideData":[
     {
       "url":"http://www.baidu.com",
-      "src":"static/upload/ban1.jpg"
+      "src":"/static/upload/ban1.jpg"
     },
     {
       "url":"http://www.baidu.com",
-      "src":"static/upload/ban2.jpg"
+      "src":"/static/upload/ban2.jpg"
     },
     {
       "url":"http://www.baidu.com",
-      "src":"static/upload/ban3.jpg"
+      "src":"/static/upload/ban3.jpg"
     },
     {
       "url":"http://www.baidu.com",
-      "src":"static/upload/ban4.jpg"
+      "src":"/static/upload/ban4.jpg"
     }
   ],
   "news":[
     {
-      "url":"news_info.html",
+      "id":1,
       "title":"热烈祝贺伟义商城成功热烈祝贺伟义商城成功上线热烈祝贺伟义商城成功上线上线"
     },
     {
-      "url":"news_info.html",
+      "id":1,
       "title":"蓝之蓝股份成公司上市"
     }
   ],
   "Selected":[
     {
-      "url":"news_info.html",
-      "src":"static/upload/jingxuan1.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan1.jpg"
     },
     {
-      "url":"news_info.html",
-      "src":"static/upload/jingxuan2.jpg"
+      "id":2,
+      "src":"/static/upload/jingxuan2.jpg"
     },
     {
-      "url":"news_info.html",
-      "src":"static/upload/jingxuan3.jpg"
+      "id":3,
+      "src":"/static/upload/jingxuan3.jpg"
     },
     {
-      "url":"news_info.html",
-      "src":"static/upload/jingxuan4.jpg"
+      "id":4,
+      "src":"/static/upload/jingxuan4.jpg"
     },
     {
-      "url":"news_info.html",
-      "src":"static/upload/jingxuan5.jpg"
+      "id":5,
+      "src":"/static/upload/jingxuan5.jpg"
     },
     {
-      "url":"news_info.html",
-      "src":"static/upload/jingxuan1.jpg"
+      "id":6,
+      "src":"/static/upload/jingxuan1.jpg"
     }
   ],
   "Wine":[
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan1.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan1.jpg"
     },
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan2.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan2.jpg"
     },
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan3.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan3.jpg"
     },
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan4.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan4.jpg"
     },
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan5.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan5.jpg"
     },
 
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan1.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan1.jpg"
     },
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan2.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan2.jpg"
     },
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan3.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan3.jpg"
     },
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan4.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan4.jpg"
     },
     {
-      "url":"pro_info.html",
-      "src":"static/upload/jingxuan5.jpg"
+      "id":1,
+      "src":"/static/upload/jingxuan5.jpg"
     }
   ],
   "GuessLike":[
     {
+      "id":1,
       "url":"pro_info.html",
-      "src":"static/upload/pro1.jpg",
+      "src":"/static/upload/pro1.jpg",
       "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮",
       "price":"296.00",
       "evaluate":0,
       "Percentage":"100%"
     },
     {
+      "id":1,
       "url":"pro_info.html",
-      "src":"static/upload/pro2.jpg",
+      "src":"/static/upload/pro2.jpg",
       "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮",
       "price":"296.00",
       "evaluate":0,
       "Percentage":"100%"
     },
     {
+      "id":1,
       "url":"pro_info.html",
-      "src":"static/upload/pro3.jpg",
+      "src":"/static/upload/pro3.jpg",
       "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮",
       "price":"296.00",
       "evaluate":5,
       "Percentage":"100%"
     },
     {
+      "id":1,
       "url":"pro_info.html",
-      "src":"static/upload/pro4.jpg",
+      "src":"/static/upload/pro4.jpg",
       "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮",
       "price":"296.00",
       "evaluate":2,
       "Percentage":"100%"
     },
     {
+      "id":1,
       "url":"pro_info.html",
-      "src":"static/upload/pro5.jpg",
+      "src":"/static/upload/pro5.jpg",
       "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮",
       "price":"296.00",
       "evaluate":1,
@@ -143,7 +148,7 @@
       "data":[
         {
           "id":1,
-          "src":"static/upload/pro1.jpg",
+          "src":"/static/upload/pro1.jpg",
           "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮",
           "price":"296.00",
           "spec":"红色,3",
@@ -151,7 +156,7 @@
         },
         {
           "id":2,
-          "src":"static/upload/pro2.jpg",
+          "src":"/static/upload/pro2.jpg",
           "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯123213邮",
           "price":"236.00",
           "spec":"红色,3",
@@ -159,7 +164,7 @@
         },
         {
           "id":3,
-          "src":"static/upload/pro3.jpg",
+          "src":"/static/upload/pro3.jpg",
           "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯123213邮",
           "price":"236.00",
           "spec":"红色,3",
@@ -177,7 +182,7 @@
       "data":[
         {
           "id":1,
-          "src":"static/upload/pro1.jpg",
+          "src":"/static/upload/pro1.jpg",
           "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮",
           "price":"296.00",
           "spec":"红色,3",
@@ -195,7 +200,7 @@
       "data":[
         {
           "id":2,
-          "src":"static/upload/pro2.jpg",
+          "src":"/static/upload/pro2.jpg",
           "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯123213邮",
           "price":"236.00",
           "spec":"红色,3",
@@ -213,7 +218,7 @@
       "data":[
         {
           "id":3,
-          "src":"static/upload/pro3.jpg",
+          "src":"/static/upload/pro3.jpg",
           "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯123213邮",
           "price":"236.00",
           "spec":"红色,3",
@@ -231,7 +236,7 @@
       "data":[
         {
           "id":1,
-          "src":"static/upload/pro1.jpg",
+          "src":"/static/upload/pro1.jpg",
           "title":"洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮",
           "price":"296.00",
           "spec":"红色,3",

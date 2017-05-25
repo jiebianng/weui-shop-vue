@@ -7,21 +7,20 @@
       <swiper v-bind:slide-data='slideData'></swiper>
       <!--图标分类-->
       <div class="weui-flex wy-iconlist-box">
-        <div class="weui-flex__item"><a v-link="{ name: 'pro_list'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link1.png"></div><p>精选推荐</p></a></div>
-        <div class="weui-flex__item"><a v-link="{ name: 'pro_list'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link2.png"></div><p>酒水专场</p></a></div>
-        <div class="weui-flex__item"><a v-link="{ name: 'all_orders'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link3.png"></div><p>订单管理</p></a></div>
-        <div class="weui-flex__item"><a href="Settled_in.html" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link4.png"></div><p>商家入驻</p></a></div>
+        <div class="weui-flex__item"><a v-link="{ name: 'pro_list',params:{ classId:1 }}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link1.png"></div><p>精选推荐</p></a></div>
+        <div class="weui-flex__item"><a v-link="{ name: 'pro_list',params:{ classId:2 }}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link2.png"></div><p>酒水专场</p></a></div>
+        <div class="weui-flex__item"><a v-link="{ name: 'all_orders',params:{ tab:0 }}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link3.png"></div><p>订单管理</p></a></div>
+        <div class="weui-flex__item"><a v-link="{ name: 'settled_in'}" class="wy-links-iconlist"><div class="img"><img src="../assets/images/icon-link4.png"></div><p>商家入驻</p></a></div>
       </div>
       <!--新闻切换-->
       <div class="wy-ind-news">
         <i class="news-icon-laba"></i>
         <div class="swiper-container swiper-news">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="new in news"><a href="{{new.url}}">{{new.title}}</a></div>
+            <div class="swiper-slide" v-for="new in news"><a v-link="{name:'news_info',params:{ goodsId: new.id }}">{{new.title}}</a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <a href="news_list.html" class="newsmore"><i class="news-icon-more"></i></a>
       </div>
       <!--精选推荐-->
       <div class="wy-Module">
@@ -29,7 +28,7 @@
         <div class="wy-Module-con">
           <div class="swiper-container swiper-jingxuan" style="padding-top:34px;">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" v-for="Sel in Selected"><a href="{{Sel.url}}"><img :src="Sel.src" /></a></div>
+              <div class="swiper-slide" v-for="Sel in Selected"><a v-link="{name:'pro_info',params:{ goodsId: Sel.id }}"><img :src="Sel.src" /></a></div>
             </div>
             <div class="swiper-pagination jingxuan-pagination"></div>
           </div>
@@ -41,7 +40,7 @@
         <div class="wy-Module-con">
           <div class="swiper-container swiper-jiushui" style="padding-top:34px;">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" v-for="Wine in Wine"><a href="{{Wine.url}}"><img :src="Wine.src" /></a></div>
+              <div class="swiper-slide" v-for="Wine in Wine"><a v-link="{name:'pro_info',params:{ goodsId: Wine.id }}"><img :src="Wine.src" /></a></div>
             </div>
             <div class="swiper-pagination jingxuan-pagination"></div>
           </div>
@@ -53,7 +52,7 @@
         <div class="wy-Module-con">
           <ul class="wy-pro-list clear">
             <li v-for="like in GuessLike">
-              <a :href="like.href">
+              <a v-link="{name:'pro_info',params:{ goodsId: like.id }}">
                 <div class="proimg"><img :src="like.src"></div>
                 <div class="protxt">
                   <div class="name">{{like.title}}</div>
@@ -62,7 +61,7 @@
               </a>
             </li>
           </ul>
-          <div class="morelinks"><a href="pro_list.html">查看更多 >></a></div>
+          <div class="morelinks"><a v-link="{ name: 'pro_list',params:{ classId:1 }}">查看更多 >></a></div>
         </div>
       </div>
     </div>
@@ -136,9 +135,3 @@
     }
   }
 </script>
-
-<style>
-  @import '../assets/css/weui.min.css';
-  @import '../assets/css/jquery-weui.css';
-  @import '../assets/css/style.css';
-</style>
