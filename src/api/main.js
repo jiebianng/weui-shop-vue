@@ -10,7 +10,7 @@
 export function getAjax(obj) {
     $.ajax({
         type: obj.type,
-        url: '/static/data/main.json',
+        url: '/weui-shop-vue/dist/static/data/main.json',
         dataType: obj.dataType,
         data:obj.data,
         traditional:true,
